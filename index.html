@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#062f22" />
+  <title>Sabai Fight Academy | Bo Fai, Hua Hin</title>
+  <meta name="description" content="Sabai Fight Academy in Bo Fai, Hua Hin. Train, get fitter and build confidence in a welcoming fight academy. Message us on WhatsApp to get started." />
+  <meta property="og:title" content="Sabai Fight Academy | Hua Hin" />
+  <meta property="og:description" content="Train hard. Feel at home. Sabai Fight Academy in Bo Fai, Hua Hin." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{
+      --ink:#f7f1df; --muted:#cfc8b4; --green:#062f22; --green2:#0b4932;
+      --orange:#f47a12; --gold:#e5b15a; --cream:#f3ead5; --card:#103f30;
+      --shadow:0 18px 50px rgba(0,0,0,.28);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--green);color:var(--ink);line-height:1.5}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    .wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+    .nav{position:fixed;inset:0 0 auto;z-index:50;background:rgba(4,37,27,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.04em}
+    .brand img{width:52px;height:52px;border-radius:50%;box-shadow:0 0 0 2px rgba(229,177,90,.45)}
+    .navlinks{display:flex;gap:24px;align-items:center;font-weight:700;font-size:14px}
+    .navlinks a:hover{color:var(--gold)}
+    .lang{border:1px solid rgba(255,255,255,.18);background:transparent;color:var(--ink);padding:9px 12px;border-radius:999px;font-weight:800;cursor:pointer}
+    .hero{min-height:100vh;display:grid;place-items:center;padding:124px 0 72px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:-20%;background:
+      radial-gradient(circle at 70% 20%,rgba(244,122,18,.35),transparent 28%),
+      radial-gradient(circle at 15% 70%,rgba(229,177,90,.13),transparent 24%),
+      linear-gradient(135deg,#031f17 0%,#063626 55%,#0a422e 100%);z-index:-2}
+    .hero:after{content:"";position:absolute;width:620px;height:620px;border-radius:50%;right:-160px;bottom:-240px;border:1px solid rgba(229,177,90,.28);box-shadow:0 0 0 72px rgba(229,177,90,.04),0 0 0 144px rgba(229,177,90,.025);z-index:-1}
+    .heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:13px;font-weight:900;margin-bottom:18px}
+    h1{font-size:clamp(52px,7.2vw,96px);line-height:.92;margin:0 0 24px;letter-spacing:-.055em;max-width:780px}
+    h1 span{color:var(--orange)}
+    .lead{font-size:clamp(18px,2vw,23px);max-width:650px;color:var(--muted);margin:0 0 32px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:14px;font-weight:900;transition:.18s transform,.18s filter;border:1px solid transparent}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
+    .primary{background:var(--orange);color:white;box-shadow:0 12px 30px rgba(244,122,18,.28)}
+    .secondary{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.05)}
+    .heroCard{background:linear-gradient(165deg,rgba(255,255,255,.11),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.13);padding:28px;border-radius:34px;box-shadow:var(--shadow);position:relative}
+    .heroCard img{width:min(330px,82%);margin:0 auto 18px;border-radius:50%;filter:drop-shadow(0 16px 28px rgba(0,0,0,.35))}
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+    .quick div{background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px;text-align:center}
+    .quick strong{display:block;font-size:20px;color:var(--gold)} .quick span{font-size:12px;color:var(--muted)}
+    section{padding:88px 0}.cream{background:var(--cream);color:#173228}.cream .muted{color:#597064}
+    .sectionHead{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:34px}
+    h2{font-size:clamp(36px,5vw,64px);line-height:1;margin:0;letter-spacing:-.045em}
+    .muted{color:var(--muted);max-width:620px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{border-radius:24px;padding:28px;background:white;box-shadow:0 10px 30px rgba(27,49,38,.09);border:1px solid rgba(17,51,37,.08)}
+    .num{font-size:12px;font-weight:900;letter-spacing:.15em;color:#9b5d19;text-transform:uppercase}
+    .card h3{font-size:26px;margin:36px 0 10px}.card p{margin:0;color:#5c6d63}
+    .strip{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+    .quote{font-size:clamp(30px,4.5vw,58px);font-weight:900;line-height:1.02;letter-spacing:-.04em}
+    .infoBox{background:var(--card);border:1px solid rgba(255,255,255,.11);padding:28px;border-radius:28px}
+    .infoRow{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.09)}
+    .infoRow:last-child{border-bottom:0}.infoRow span{color:var(--muted)}
+
+    .scheduleSection{background:#082b20;position:relative;overflow:hidden}
+    .scheduleSection:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 10%,rgba(244,122,18,.16),transparent 30%),radial-gradient(circle at 5% 95%,rgba(229,177,90,.08),transparent 28%);pointer-events:none}
+    .scheduleGrid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .schedulePanel{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:28px;box-shadow:0 16px 40px rgba(0,0,0,.16)}
+    .schedulePanel h3{margin:0 0 20px;font-size:28px}
+    .scheduleRow{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.09)}
+    .scheduleRow:last-child{border-bottom:0}.scheduleRow span{color:var(--muted)}.scheduleRow strong{color:var(--gold);font-size:18px;text-align:right}
+    .priceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;position:relative;margin-top:18px}
+    .priceCard{background:var(--cream);color:#173228;border-radius:20px;padding:22px;border:1px solid rgba(255,255,255,.08)}
+    .priceCard .label{font-size:14px;color:#627468;min-height:42px}.priceCard .price{font-size:34px;font-weight:950;letter-spacing:-.03em;margin-top:10px}.priceCard .price small{font-size:14px;font-weight:800;color:#7c6641;letter-spacing:.02em}
+    .scheduleNote{position:relative;margin-top:18px;color:var(--muted);font-size:14px}
+    .contact{background:linear-gradient(135deg,#f57a10,#ce5412);color:white}
+    .contactGrid{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+    .contact h2{max-width:800px}.contact p{font-size:19px;opacity:.9}
+    .contact .btn{background:#072f23;color:white;min-width:190px}
+    footer{padding:30px 0;background:#021a13;color:#a8b9af;font-size:14px}
+    .footerIn{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footerIn strong{color:white}
+
+    .gallerySection{background:#031f17}
+    .galleryGrid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:290px 290px;gap:14px}
+    .galleryCard{position:relative;overflow:hidden;border-radius:24px;border:1px solid rgba(255,255,255,.1);background:#0a3326;box-shadow:var(--shadow)}
+    .galleryCard:first-child{grid-row:1 / span 2}
+    .galleryCard img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+    .galleryCard:hover img{transform:scale(1.035)}
+    .galleryCard:after{content:"Instagram ↗";position:absolute;right:12px;bottom:12px;background:rgba(2,26,19,.78);padding:8px 11px;border-radius:999px;font-size:12px;font-weight:900;backdrop-filter:blur(8px)}
+    .locationGrid{display:grid;grid-template-columns:.82fr 1.18fr;gap:22px;align-items:stretch}
+    .mapCard{min-height:420px;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow);background:#0b4932}
+    .mapCard iframe{width:100%;height:100%;min-height:420px;border:0}
+    .pinBadge{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:10px 13px;border-radius:999px;background:rgba(244,122,18,.15);border:1px solid rgba(244,122,18,.35);color:#ffd19c;font-weight:800;font-size:13px}
+    .mobileBar{display:none}
+    @media (max-width:820px){
+      .navlinks a:not(.langLink){display:none}.brand span{font-size:14px}
+      .hero{padding-top:110px;min-height:auto}.heroGrid,.strip,.contactGrid{grid-template-columns:1fr}.heroGrid{gap:34px}
+      .heroCard{order:-1;max-width:480px;margin:auto}.heroCard img{width:230px}.quick{grid-template-columns:repeat(3,1fr)}
+      .cards{grid-template-columns:1fr}.scheduleGrid{grid-template-columns:1fr}.galleryGrid{grid-template-columns:1fr 1fr;grid-template-rows:360px 240px 240px}.galleryCard:first-child{grid-column:1 / -1;grid-row:auto}.locationGrid{grid-template-columns:1fr}.priceGrid{grid-template-columns:1fr 1fr}.sectionHead{display:block}.sectionHead .muted{margin-top:16px}
+      section{padding:66px 0}.contactGrid .btn{width:100%}
+      .mobileBar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:8px;padding:8px;background:rgba(3,31,23,.9);border:1px solid rgba(255,255,255,.12);border-radius:18px;backdrop-filter:blur(12px);box-shadow:0 18px 50px rgba(0,0,0,.35)}
+      .mobileBar .btn{padding:12px 10px;font-size:14px}
+      .scheduleRow{grid-template-columns:1fr}.scheduleRow strong{text-align:left}.priceGrid{grid-template-columns:1fr}
+      footer{padding-bottom:94px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SportsActivityLocation",
+    "name":"Sabai Retreat & Fight Academy",
+    "telephone":"+66 98 707 8676",
+    "priceRange":"฿300-฿8500",
+    "sameAs":["https://www.instagram.com/sabairetreat_and_fightacademy/"],
+    "address":{"@type":"PostalAddress","addressLocality":"Hua Hin","postalCode":"77110","addressCountry":"TH"}
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#top"><img src="assets/sabai-logo.jpg" alt="Sabai Fight Academy logo"><span>SABAI FIGHT ACADEMY</span></a>
+      <nav class="navlinks">
+        <a class="langLink" href="#training" data-en="Training" data-th="การฝึก">Training</a>
+        <a class="langLink" href="#gallery" data-en="Photos" data-th="รูปภาพ">Photos</a>
+        <a class="langLink" href="#schedule" data-en="Schedule & prices" data-th="ตารางและราคา">Schedule & prices</a>
+        <a class="langLink" href="#visit" data-en="Visit" data-th="สถานที่">Visit</a>
+        <a class="langLink" href="#contact" data-en="Contact" data-th="ติดต่อ">Contact</a>
+        <button class="lang" id="langBtn" aria-label="Switch language">TH</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap heroGrid">
+        <div>
+          <div class="eyebrow" data-en="Bo Fai · Hua Hin · Thailand" data-th="บ่อฝ้าย · หัวหิน · ประเทศไทย">Bo Fai · Hua Hin · Thailand</div>
+          <h1 data-en="Train hard.<br><span>Feel at home.</span>" data-th="ฝึกให้สุด<br><span>สบายเหมือนบ้าน</span>">Train hard.<br><span>Feel at home.</span></h1>
+          <p class="lead" data-en="A friendly local fight academy in Hua Hin. Come to train, get fitter, sharpen your skills and enjoy the Sabai atmosphere." data-th="ยิมมวยบรรยากาศเป็นกันเองในหัวหิน มาฝึก เพิ่มความฟิต พัฒนาทักษะ และสนุกกับบรรยากาศสบายๆ แบบ Sabai">A friendly local fight academy in Hua Hin. Come to train, get fitter, sharpen your skills and enjoy the Sabai atmosphere.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://wa.me/66987078676?text=Hi%20Sabai%20Fight%20Academy%2C%20I%27d%20like%20to%20ask%20about%20training." target="_blank" rel="noopener" data-en="Message on WhatsApp" data-th="ส่งข้อความทาง WhatsApp">Message on WhatsApp</a>
+            <a class="btn secondary" href="tel:+66987078676" data-en="Call +66 98 707 8676" data-th="โทร +66 98 707 8676">Call +66 98 707 8676</a>
+          </div>
+        </div>
+        <div class="heroCard">
+          <img src="assets/sabai-logo.jpg" alt="Sabai Retreat & Fight Academy">
+          <div class="quick">
+            <div><strong>3×</strong><span data-en="Group sessions daily" data-th="คลาสกลุ่มต่อวัน">Group sessions daily</span></div>
+            <div><strong>฿300</strong><span data-en="Group drop-in" data-th="คลาสกลุ่มครั้งเดียว">Group drop-in</span></div>
+            <div><strong>฿700</strong><span data-en="Private class" data-th="คลาสส่วนตัว">Private class</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cream" id="training">
+      <div class="wrap">
+        <div class="sectionHead">
+          <h2 data-en="Train your way." data-th="ฝึกในแบบของคุณ">Train your way.</h2>
+          <p class="muted" data-en="Whether you are visiting Hua Hin or live nearby, message us and we’ll point you to the right session for your level and goals." data-th="ไม่ว่าคุณจะมาเที่ยวหัวหินหรืออยู่ใกล้ๆ ทักหาเรา แล้วเราจะแนะนำการฝึกที่เหมาะกับระดับและเป้าหมายของคุณ">Whether you are visiting Hua Hin or live nearby, message us and we’ll point you to the right session for your level and goals.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="num">01 · Technique</div><h3 data-en="Fight skills" data-th="ทักษะการต่อสู้">Fight skills</h3><p data-en="Build strong fundamentals, improve technique and develop confidence through coached training." data-th="สร้างพื้นฐานที่แข็งแรง พัฒนาเทคนิค และเพิ่มความมั่นใจผ่านการฝึกกับโค้ช">Build strong fundamentals, improve technique and develop confidence through coached training.</p></article>
+          <article class="card"><div class="num">02 · Fitness</div><h3 data-en="Conditioning" data-th="ฟิตเนสและความแข็งแรง">Conditioning</h3><p data-en="A high-energy way to improve fitness, movement and stamina while learning practical fight skills." data-th="เพิ่มความฟิต การเคลื่อนไหว และความอึด พร้อมเรียนรู้ทักษะการต่อสู้ที่ใช้ได้จริง">A high-energy way to improve fitness, movement and stamina while learning practical fight skills.</p></article>
+          <article class="card"><div class="num">03 · Coaching</div><h3 data-en="Personal training" data-th="เทรนส่วนตัว">Personal training</h3><p data-en="Want more individual attention? Ask the team about one-to-one training and current availability." data-th="อยากได้การดูแลแบบใกล้ชิด? สอบถามทีมงานเรื่องการเทรนตัวต่อตัวและเวลาว่างได้เลย">Want more individual attention? Ask the team about one-to-one training and current availability.</p></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="gallerySection" id="gallery">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div><div class="eyebrow" data-en="Real training · from Sabai Instagram" data-th="บรรยากาศจริง · จาก Instagram ของ Sabai">Real training · from Sabai Instagram</div><h2 data-en="This is Sabai." data-th="นี่คือ Sabai">This is Sabai.</h2></div>
+          <p class="muted" data-en="Real sessions, real coaches and the open-air camp atmosphere. Tap any photo to see the original post." data-th="การฝึกจริง โค้ชจริง และบรรยากาศยิมกลางแจ้ง แตะรูปเพื่อดูโพสต์ต้นฉบับ">Real sessions, real coaches and the open-air camp atmosphere. Tap any photo to see the original post.</p>
+        </div>
+        <div class="galleryGrid">
+          <a class="galleryCard" href="https://www.instagram.com/sabairetreat_and_fightacademy/reel/DU5Eq0qj_GO/" target="_blank" rel="noopener"><img loading="lazy" src="sabai-training-01.jpg" alt="Muay Thai training at Sabai Fight Academy"></a>
+          <a class="galleryCard" href="https://www.instagram.com/sabairetreat_and_fightacademy/p/DcOC14FmXug/" target="_blank" rel="noopener"><img loading="lazy" src="sabai-training-02.jpg" alt="Sabai Fight Academy coach training"></a>
+          <a class="galleryCard" href="https://www.instagram.com/sabairetreat_and_fightacademy/reel/DbIXbbcSffc/" target="_blank" rel="noopener"><img loading="lazy" src="sabai-training-03.jpg" alt="Martial arts session at Sabai"></a>
+          <a class="galleryCard" href="https://www.instagram.com/sabairetreat_and_fightacademy/reel/DbLraglSnho/" target="_blank" rel="noopener"><img loading="lazy" src="sabai-training-04.jpg" alt="Training at Sabai Retreat and Fight Academy"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="scheduleSection" id="schedule">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <div class="eyebrow" data-en="Current schedule · from 1 August 2026" data-th="ตารางปัจจุบัน · เริ่ม 1 สิงหาคม 2026">Current schedule · from 1 August 2026</div>
+            <h2 data-en="Train when it suits you." data-th="เลือกเวลาฝึกที่เหมาะกับคุณ">Train when it suits you.</h2>
+          </div>
+          <p class="muted" data-en="Three group sessions each day, plus private training available between the morning and afternoon classes." data-th="มีคลาสกลุ่มวันละ 3 รอบ และสามารถจองคลาสส่วนตัวได้ระหว่างคลาสเช้าและคลาสบ่าย">Three group sessions each day, plus private training available between the morning and afternoon classes.</p>
+        </div>
+
+        <div class="scheduleGrid">
+          <div class="schedulePanel">
+            <h3 data-en="Daily timetable" data-th="ตารางประจำวัน">Daily timetable</h3>
+            <div class="scheduleRow"><span data-en="Morning group class" data-th="คลาสกลุ่มช่วงเช้า">Morning group class</span><strong>9:00 AM – 10:30 AM</strong></div>
+            <div class="scheduleRow"><span data-en="Private classes" data-th="คลาสส่วนตัว">Private classes</span><strong>10:30 AM – 4:30 PM</strong></div>
+            <div class="scheduleRow"><span data-en="Afternoon group class" data-th="คลาสกลุ่มช่วงบ่าย">Afternoon group class</span><strong>4:30 PM – 6:00 PM</strong></div>
+            <div class="scheduleRow"><span data-en="Evening group class" data-th="คลาสกลุ่มช่วงเย็น">Evening group class</span><strong>6:00 PM – 7:30 PM</strong></div>
+          </div>
+
+          <div class="schedulePanel">
+            <h3 data-en="Simple pricing" data-th="ราคาแบบเข้าใจง่าย">Simple pricing</h3>
+            <div class="priceGrid">
+              <div class="priceCard"><div class="label" data-en="Group class · drop in" data-th="คลาสกลุ่ม · ครั้งเดียว">Group class · drop in</div><div class="price">฿300</div></div>
+              <div class="priceCard"><div class="label" data-en="5 group classes" data-th="คลาสกลุ่ม 5 ครั้ง">5 group classes</div><div class="price">฿1,450</div></div>
+              <div class="priceCard"><div class="label" data-en="10 group classes" data-th="คลาสกลุ่ม 10 ครั้ง">10 group classes</div><div class="price">฿2,800</div></div>
+              <div class="priceCard"><div class="label" data-en="Monthly · 1 class/day" data-th="รายเดือน · 1 คลาส/วัน">Monthly · 1 class/day</div><div class="price">฿5,000</div></div>
+              <div class="priceCard"><div class="label" data-en="Monthly · 2 classes/day" data-th="รายเดือน · 2 คลาส/วัน">Monthly · 2 classes/day</div><div class="price">฿8,500</div></div>
+              <div class="priceCard"><div class="label" data-en="Private class" data-th="คลาสส่วนตัว">Private class</div><div class="price">฿700</div></div>
+            </div>
+          </div>
+        </div>
+        <p class="scheduleNote" data-en="Schedule and prices shown as published by Sabai Fight Academy. Message us to confirm availability before your first session." data-th="ตารางและราคาตามที่ Sabai Fight Academy ประกาศ กรุณาทักหาเราเพื่อยืนยันที่ว่างก่อนมาฝึกครั้งแรก">Schedule and prices shown as published by Sabai Fight Academy. Message us to confirm availability before your first session.</p>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap">
+        <div class="sectionHead"><div><div class="eyebrow" data-en="By the lake · Bo Fai" data-th="ริมทะเลสาบ · บ่อฝ้าย">By the lake · Bo Fai</div><h2 data-en="Easy to find." data-th="หาเจอง่าย">Easy to find.</h2><div class="pinBadge">📍 Sabai Retreat & Fight Academy · Hua Hin</div></div><p class="muted" data-en="Use the live map below for the pin drop and directions straight to the camp." data-th="ใช้แผนที่ด้านล่างเพื่อดูหมุดและเส้นทางตรงมายังค่าย">Use the live map below for the pin drop and directions straight to the camp.</p></div>
+        <div class="locationGrid">
+          <div class="strip" style="display:block">
+        <div>
+          <div class="eyebrow" data-en="Local. Friendly. Focused." data-th="เป็นกันเอง ตั้งใจฝึก ใกล้บ้าน">Local. Friendly. Focused.</div>
+          <div class="quote" data-en="Come for the training. Stay for the Sabai feeling." data-th="มาฝึกให้เต็มที่ แล้วหลงรักความสบายแบบ Sabai">Come for the training. Stay for the Sabai feeling.</div>
+        </div>
+        <div class="infoBox">
+          <div class="infoRow"><span data-en="Area" data-th="พื้นที่">Area</span><strong>Bo Fai, Hua Hin</strong></div>
+          <div class="infoRow"><span data-en="Phone" data-th="โทรศัพท์">Phone</span><strong>+66 98 707 8676</strong></div>
+          <div class="infoRow"><span data-en="Group classes" data-th="คลาสกลุ่ม">Group classes</span><strong>9:00 · 16:30 · 18:00</strong></div>
+          <div class="infoRow"><span>Instagram</span><strong><a href="https://www.instagram.com/sabairetreat_and_fightacademy/" target="_blank" rel="noopener">@sabairetreat_and_fightacademy ↗</a></strong></div>
+          <div class="infoRow"><span data-en="Directions" data-th="เส้นทาง">Directions</span><strong><a href="https://www.google.com/maps/search/?api=1&query=Sabai+Retreat+%26+Fight+Academy+Hua+Hin" target="_blank" rel="noopener" data-en="Open in Google Maps ↗" data-th="เปิดใน Google Maps ↗">Open in Google Maps ↗</a></strong></div>
+        </div>
+          </div>
+          <div class="mapCard"><iframe title="Sabai Retreat & Fight Academy map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sabai%20Retreat%20%26%20Fight%20Academy%2C%20Hua%20Hin%2C%20Thailand&output=embed"></iframe></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contactGrid">
+        <div>
+          <div class="eyebrow" style="color:#fff7e7" data-en="Ready to train?" data-th="พร้อมฝึกแล้วหรือยัง?">Ready to train?</div>
+          <h2 data-en="Send us a message and we’ll get you started." data-th="ส่งข้อความหาเรา แล้วมาเริ่มฝึกกัน">Send us a message and we’ll get you started.</h2>
+          <p data-en="Tell us your experience level, when you’re in Hua Hin and what you want to work on." data-th="บอกระดับประสบการณ์ วันที่อยู่หัวหิน และสิ่งที่คุณอยากพัฒนา">Tell us your experience level, when you’re in Hua Hin and what you want to work on.</p>
+        </div>
+        <a class="btn" href="https://wa.me/66987078676?text=Hi%20Sabai%20Fight%20Academy%2C%20I%27d%20like%20to%20book%20training." target="_blank" rel="noopener" data-en="Book on WhatsApp" data-th="จองผ่าน WhatsApp">Book on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footerIn"><div><strong>Sabai Fight Academy</strong> · Bo Fai, Hua Hin, Thailand</div><div>+66 98 707 8676</div></div>
+  </footer>
+
+  <div class="mobileBar">
+    <a class="btn secondary" href="tel:+66987078676" data-en="Call" data-th="โทร">Call</a>
+    <a class="btn primary" href="https://wa.me/66987078676" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+  <script>
+    const btn=document.getElementById('langBtn');let lang='en';
+    btn.addEventListener('click',()=>{lang=lang==='en'?'th':'en';btn.textContent=lang==='en'?'TH':'EN';document.documentElement.lang=lang;
+      document.querySelectorAll('[data-en][data-th]').forEach(el=>{el.innerHTML=el.dataset[lang]});
+    });
+  </script>
+</body>
+</html>
