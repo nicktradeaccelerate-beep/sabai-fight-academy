@@ -4,11 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#062f22" />
-  <title>Sabai Fight Academy | Bo Fai, Hua Hin</title>
-  <meta name="description" content="Sabai Fight Academy in Bo Fai, Hua Hin. Train, get fitter and build confidence in a welcoming fight academy. Message us on WhatsApp to get started." />
-  <meta property="og:title" content="Sabai Fight Academy | Hua Hin" />
-  <meta property="og:description" content="Train hard. Feel at home. Sabai Fight Academy in Bo Fai, Hua Hin." />
+  <title>Muay Thai, Sauna & Cold Plunge Hua Hin | Sabai Retreat & Fight Academy</title>
+  <meta name="description" content="Sabai Retreat & Fight Academy in Hua Hin: Muay Thai, Finnish sauna, cold plunge, lakeside recovery, junior training, retreats and private events in Bo Fai." />
+  <meta property="og:title" content="Sabai Retreat & Fight Academy | Muay Thai + Recovery Hua Hin" />
+  <meta property="og:description" content="Train, recover and reset in Hua Hin: Muay Thai, Finnish sauna, cold plunge, lakeside recovery, retreats and events." />
   <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://nicktradeaccelerate-beep.github.io/sabai-fight-academy/" />
   <style>
     *,*::before,*::after{box-sizing:border-box}
     :root{
@@ -96,12 +97,35 @@
     .mapCard{min-height:420px;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow);background:#0b4932}
     .mapCard iframe{width:100%;height:100%;min-height:420px;border:0}
     .pinBadge{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:10px 13px;border-radius:999px;background:rgba(244,122,18,.15);border:1px solid rgba(244,122,18,.35);color:#ffd19c;font-weight:800;font-size:13px}
+
+    .recoverySection{background:#0a3427;position:relative;overflow:hidden}
+    .recoverySection:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 10%,rgba(229,177,90,.11),transparent 28%),radial-gradient(circle at 88% 86%,rgba(244,122,18,.16),transparent 30%);pointer-events:none}
+    .featureGrid{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .featureCard{padding:28px;border-radius:26px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);box-shadow:var(--shadow)}
+    .featureIcon{font-size:32px;margin-bottom:20px}.featureCard h3{font-size:28px;margin:0 0 10px}.featureCard p{color:var(--muted);margin:0}
+    .packageSection{background:var(--cream);color:#173228}.packageSection .muted{color:#63766a}
+    .packageGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .packageCard{background:white;border:1px solid rgba(17,51,37,.1);border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(27,49,38,.09);display:flex;flex-direction:column}
+    .packageCard.featured{background:#082b20;color:white;border-color:#d79a42;transform:translateY(-5px)}
+    .packageCard.featured p{color:#cfdcd5}.packageCard h3{font-size:24px;margin:14px 0 10px}.packageCard p{color:#617268;flex:1}
+    .packageTag{display:inline-flex;align-self:flex-start;padding:7px 10px;border-radius:999px;background:#f3ead5;color:#8a5517;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .packageCard.featured .packageTag{background:rgba(244,122,18,.18);color:#ffd4a8}.packageCard .btn{margin-top:18px;background:#0b4932;color:white}.packageCard.featured .btn{background:var(--orange)}
+    .eventsSection{background:#031f17}.eventGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .eventCard{padding:30px;border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.11)}
+    .eventCard h3{font-size:28px;margin:0 0 10px}.eventCard p{color:var(--muted);margin:0}.eventCard .eyebrow{margin-bottom:12px}
+    .youthSection{background:#efe3c8;color:#173228}.youthSection .muted{color:#5e7165}
+    .youthGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:start}.youthBox{background:white;padding:28px;border-radius:24px;border:1px solid rgba(17,51,37,.1)}
+    .youthBox h3{margin:0 0 14px;font-size:28px}.youthBox ul{padding-left:20px;margin:0}.youthBox li{margin:8px 0;color:#53675b}
+    .faqSection{background:#082b20}.faqGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    details{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:18px 20px}
+    summary{cursor:pointer;font-weight:900;color:#fff}.faqGrid p{color:var(--muted);margin:12px 0 0}
+
     .mobileBar{display:none}
     @media (max-width:820px){
       .navlinks a{display:none}.brand span{font-size:13px;max-width:155px;line-height:1.15}.brand img{width:44px;height:44px}.navin{height:68px}.navlinks{gap:8px}
       .hero{padding-top:92px;min-height:auto}.heroGrid,.strip,.contactGrid{grid-template-columns:1fr}.heroGrid{gap:30px}
       .heroCard{order:-1;max-width:520px;width:100%;min-height:430px;margin:auto;border-radius:28px}.heroPhoto{height:430px;object-position:center 35%}.quick{grid-template-columns:repeat(3,minmax(0,1fr));left:12px;right:12px;bottom:12px;gap:7px}.quick div{padding:11px 7px}.quick strong{font-size:19px}.quick span{font-size:11px}.photoTag{left:12px;top:12px}
-      .cards{grid-template-columns:1fr}.scheduleGrid{grid-template-columns:1fr}.galleryGrid{grid-template-columns:1fr 1fr;grid-template-rows:360px 240px 240px}.galleryCard:first-child{grid-column:1 / -1;grid-row:auto}.locationGrid{grid-template-columns:1fr}.priceGrid{grid-template-columns:1fr 1fr}.sectionHead{display:block}.sectionHead .muted{margin-top:16px}
+      .cards{grid-template-columns:1fr}.featureGrid,.packageGrid,.eventGrid,.faqGrid,.youthGrid{grid-template-columns:1fr}.packageCard.featured{transform:none}.scheduleGrid{grid-template-columns:1fr}.galleryGrid{grid-template-columns:1fr 1fr;grid-template-rows:360px 240px 240px}.galleryCard:first-child{grid-column:1 / -1;grid-row:auto}.locationGrid{grid-template-columns:1fr}.priceGrid{grid-template-columns:1fr 1fr}.sectionHead{display:block}.sectionHead .muted{margin-top:16px}
       section{padding:66px 0}.contactGrid .btn{width:100%}
       .mobileBar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:8px;padding:8px;background:rgba(3,31,23,.9);border:1px solid rgba(255,255,255,.12);border-radius:18px;backdrop-filter:blur(12px);box-shadow:0 18px 50px rgba(0,0,0,.35)}
       .mobileBar .btn{min-width:0;padding:12px 4px;font-size:12px;white-space:nowrap}
@@ -114,9 +138,16 @@
     "@context":"https://schema.org",
     "@type":"SportsActivityLocation",
     "name":"Sabai Retreat & Fight Academy",
+    "description":"Muay Thai training, Finnish sauna, cold plunge, lakeside recovery, junior training, retreats and events in Hua Hin.",
     "telephone":"+66 98 707 8676",
     "priceRange":"฿300-฿8500",
     "sameAs":["https://www.instagram.com/sabairetreat_and_fightacademy/"],
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"Finnish sauna","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Cold plunge / ice bath","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Lakeside setting","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Cooking and event area","value":true}
+    ],
     "address":{"@type":"PostalAddress","addressLocality":"Hua Hin","postalCode":"77110","addressCountry":"TH"}
   }
   </script>
@@ -126,11 +157,12 @@
     <div class="wrap navin">
       <a class="brand" href="#top"><img src="sabai-logo.jpg" alt="Sabai Fight Academy logo"><span>SABAI FIGHT ACADEMY</span></a>
       <nav class="navlinks">
-        <a class="langLink" href="#training" data-en="Training" data-th="การฝึก">Training</a>
-        <a class="langLink" href="#gallery" data-en="Photos" data-th="รูปภาพ">Photos</a>
-        <a class="langLink" href="#schedule" data-en="Schedule & prices" data-th="ตารางและราคา">Schedule & prices</a>
+        <a class="langLink" href="#training" data-en="Train" data-th="ฝึก">Train</a>
+        <a class="langLink" href="#recovery" data-en="Recover" data-th="ฟื้นฟู">Recover</a>
+        <a class="langLink" href="#packages" data-en="Packages" data-th="แพ็กเกจ">Packages</a>
+        <a class="langLink" href="#events" data-en="Retreats & Events" data-th="รีทรีตและอีเวนต์">Retreats & Events</a>
+        <a class="langLink" href="#youth" data-en="Young Fighters" data-th="เยาวชน">Young Fighters</a>
         <a class="langLink" href="#visit" data-en="Visit" data-th="สถานที่">Visit</a>
-        <a class="langLink" href="#contact" data-en="Contact" data-th="ติดต่อ">Contact</a>
         <button class="lang" id="langBtn" aria-label="Switch language">TH</button>
       </nav>
     </div>
@@ -140,9 +172,9 @@
     <section class="hero">
       <div class="wrap heroGrid">
         <div>
-          <div class="eyebrow" data-en="Bo Fai · Hua Hin · Thailand" data-th="บ่อฝ้าย · หัวหิน · ประเทศไทย">Bo Fai · Hua Hin · Thailand</div>
-          <h1 data-en="Train hard.<br><span>Feel at home.</span>" data-th="ฝึกให้สุด<br><span>สบายเหมือนบ้าน</span>">Train hard.<br><span>Feel at home.</span></h1>
-          <p class="lead" data-en="A friendly local fight academy in Hua Hin. Come to train, get fitter, sharpen your skills and enjoy the Sabai atmosphere." data-th="ยิมมวยบรรยากาศเป็นกันเองในหัวหิน มาฝึก เพิ่มความฟิต พัฒนาทักษะ และสนุกกับบรรยากาศสบายๆ แบบ Sabai">A friendly local fight academy in Hua Hin. Come to train, get fitter, sharpen your skills and enjoy the Sabai atmosphere.</p>
+          <div class="eyebrow" data-en="Muay Thai · Finnish Sauna · Cold Plunge · Lakeside Hua Hin" data-th="มวยไทย · ซาวน่าฟินแลนด์ · บ่อน้ำเย็น · ริมทะเลสาบหัวหิน">Muay Thai · Finnish Sauna · Cold Plunge · Lakeside Hua Hin</div>
+          <h1 data-en="Train. Recover.<br><span>Reset.</span>" data-th="ฝึก ฟื้นฟู<br><span>รีเซ็ต</span>">Train. Recover.<br><span>Reset.</span></h1>
+          <p class="lead" data-en="Authentic Muay Thai with a Finnish sauna, cold plunge and relaxed lakeside setting in Bo Fai. Come for a class, stay for the recovery — or build a full Sabai day around it." data-th="มวยไทยแท้พร้อมซาวน่าฟินแลนด์ บ่อน้ำเย็น และบรรยากาศริมทะเลสาบที่บ่อฝ้าย มาฝึกแล้วต่อด้วยการฟื้นฟู หรือใช้เวลาทั้งวันที่ Sabai">Authentic Muay Thai with a Finnish sauna, cold plunge and relaxed lakeside setting in Bo Fai. Come for a class, stay for the recovery — or build a full Sabai day around it.</p>
           <div class="cta">
             <a class="btn primary" href="https://wa.me/66987078676?text=Hi%20Sabai%20Fight%20Academy%2C%20I%27d%20like%20to%20ask%20about%20training." target="_blank" rel="noopener" data-en="WhatsApp" data-th="WhatsApp">WhatsApp</a>
             <a class="btn lineBtn" href="https://line.me/R/nv/addFriends" target="_blank" rel="noopener" data-en="Open LINE" data-th="เปิด LINE">Open LINE</a>
@@ -153,9 +185,9 @@
           <img class="heroPhoto" src="sabai-training-03.jpg" alt="Sabai Fight Academy training group in Hua Hin">
           <div class="photoTag" data-en="Real training · Hua Hin" data-th="ฝึกจริง · หัวหิน">Real training · Hua Hin</div>
           <div class="quick">
-            <div><strong>3×</strong><span data-en="Group sessions daily" data-th="คลาสกลุ่มต่อวัน">Group sessions daily</span></div>
-            <div><strong>฿300</strong><span data-en="Group drop-in" data-th="คลาสกลุ่มครั้งเดียว">Group drop-in</span></div>
-            <div><strong>฿700</strong><span data-en="Private class" data-th="คลาสส่วนตัว">Private class</span></div>
+            <div><strong>฿300</strong><span data-en="Group Muay Thai" data-th="มวยไทยกลุ่ม">Group Muay Thai</span></div>
+            <div><strong>HOT / COLD</strong><span data-en="Sauna + cold plunge" data-th="ซาวน่า + บ่อน้ำเย็น">Sauna + cold plunge</span></div>
+            <div><strong>GROUPS</strong><span data-en="Retreats & events" data-th="รีทรีตและอีเวนต์">Retreats & events</span></div>
           </div>
         </div>
       </div>
@@ -175,6 +207,75 @@
       </div>
     </section>
 
+
+
+    <section class="recoverySection" id="recovery">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div><div class="eyebrow" data-en="Recover at Sabai" data-th="ฟื้นฟูที่ Sabai">Recover at Sabai</div><h2 data-en="Heat. Cold. Reset." data-th="ร้อน เย็น รีเซ็ต">Heat. Cold. Reset.</h2></div>
+          <p class="muted" data-en="Sabai already has the recovery setup: a Finnish sauna, cold plunge and space to slow down beside the lake. Use it after training or come for recovery on its own." data-th="Sabai มีพื้นที่ฟื้นฟูพร้อมแล้ว ทั้งซาวน่าฟินแลนด์ บ่อน้ำเย็น และพื้นที่พักผ่อนริมทะเลสาบ ใช้หลังฝึกหรือมาเพื่อฟื้นฟูโดยเฉพาะได้">Sabai already has the recovery setup: a Finnish sauna, cold plunge and space to slow down beside the lake. Use it after training or come for recovery on its own.</p>
+        </div>
+        <div class="featureGrid">
+          <article class="featureCard"><div class="featureIcon">♨</div><h3 data-en="Finnish sauna" data-th="ซาวน่าฟินแลนด์">Finnish sauna</h3><p data-en="A proper heat session after training or as part of a standalone recovery visit." data-th="ใช้ความร้อนหลังการฝึก หรือมาใช้เป็นเซสชันฟื้นฟูโดยเฉพาะ">A proper heat session after training or as part of a standalone recovery visit.</p></article>
+          <article class="featureCard"><div class="featureIcon">❄</div><h3 data-en="Cold plunge" data-th="บ่อน้ำเย็น">Cold plunge</h3><p data-en="Cool down, reset and pair hot and cold in one simple Sabai recovery session." data-th="คลายความร้อน รีเซ็ตร่างกาย และสลับร้อน-เย็นในเซสชันเดียว">Cool down, reset and pair hot and cold in one simple Sabai recovery session.</p></article>
+          <article class="featureCard"><div class="featureIcon">◉</div><h3 data-en="Lakeside recovery" data-th="ฟื้นฟูริมทะเลสาบ">Lakeside recovery</h3><p data-en="Take time between rounds, classes or recovery sessions in Sabai's relaxed lakeside setting." data-th="พักระหว่างรอบ คลาส หรือช่วงฟื้นฟูในบรรยากาศสบายๆ ริมทะเลสาบ">Take time between rounds, classes or recovery sessions in Sabai's relaxed lakeside setting.</p></article>
+        </div>
+        <div class="cta" style="margin-top:24px">
+          <a class="btn primary" href="sauna-ice-bath-hua-hin/" data-en="Sauna & cold plunge in Hua Hin" data-th="ซาวน่าและบ่อน้ำเย็นในหัวหิน">Sauna & cold plunge in Hua Hin</a>
+          <a class="btn secondary" href="https://wa.me/66987078676?text=Hi%20Sabai%2C%20I%27d%20like%20to%20ask%20about%20sauna%2C%20cold%20plunge%20and%20recovery." target="_blank" rel="noopener" data-en="Ask about recovery" data-th="สอบถามเรื่องการฟื้นฟู">Ask about recovery</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="packageSection" id="packages">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div><div class="eyebrow" data-en="Build your Sabai visit" data-th="เลือกประสบการณ์ Sabai">Build your Sabai visit</div><h2 data-en="Start with a class. Add the recovery." data-th="เริ่มจากคลาส แล้วเพิ่มการฟื้นฟู">Start with a class. Add the recovery.</h2></div>
+          <p class="muted" data-en="Training is the entry point. Sauna, cold plunge, lakeside time, food and group experiences give you more ways to make a day of it." data-th="การฝึกคือจุดเริ่มต้น ซาวน่า บ่อน้ำเย็น เวลาริมทะเลสาบ อาหาร และกิจกรรมกลุ่มช่วยให้ใช้เวลาที่ Sabai ได้มากขึ้น">Training is the entry point. Sauna, cold plunge, lakeside time, food and group experiences give you more ways to make a day of it.</p>
+        </div>
+        <div class="packageGrid">
+          <article class="packageCard"><span class="packageTag" data-en="Train" data-th="ฝึก">Train</span><h3 data-en="Muay Thai" data-th="มวยไทย">Muay Thai</h3><p data-en="Drop in to a group class from ฿300, book private coaching or choose a multi-session package." data-th="เข้าเรียนคลาสกลุ่มเริ่ม ฿300 จองเทรนส่วนตัว หรือเลือกแพ็กเกจหลายครั้ง">Drop in to a group class from ฿300, book private coaching or choose a multi-session package.</p><a class="btn" href="#schedule" data-en="See training prices" data-th="ดูราคาการฝึก">See training prices</a></article>
+          <article class="packageCard"><span class="packageTag" data-en="Recover" data-th="ฟื้นฟู">Recover</span><h3 data-en="Recovery Pass" data-th="แพ็กเกจฟื้นฟู">Recovery Pass</h3><p data-en="Finnish sauna + cold plunge, with time to recover in Sabai's relaxed setting. Ask Tony for the current recovery price." data-th="ซาวน่าฟินแลนด์ + บ่อน้ำเย็น พร้อมเวลาพักผ่อน สอบถาม Tony สำหรับราคาปัจจุบัน">Finnish sauna + cold plunge, with time to recover in Sabai's relaxed setting. Ask Tony for the current recovery price.</p><a class="btn" href="https://wa.me/66987078676?text=Hi%20Sabai%2C%20what%20is%20the%20current%20Recovery%20Pass%20price%3F" target="_blank" rel="noopener" data-en="Ask recovery price" data-th="สอบถามราคาฟื้นฟู">Ask recovery price</a></article>
+          <article class="packageCard featured"><span class="packageTag" data-en="Best upgrade" data-th="อัปเกรดแนะนำ">Best upgrade</span><h3 data-en="Train + Recover" data-th="ฝึก + ฟื้นฟู">Train + Recover</h3><p data-en="Add sauna and cold plunge to your Muay Thai session. The simplest way to turn one class into a fuller Sabai experience." data-th="เพิ่มซาวน่าและบ่อน้ำเย็นหลังคลาสมวยไทย เปลี่ยนหนึ่งคลาสให้เป็นประสบการณ์ Sabai ที่ครบกว่า">Add sauna and cold plunge to your Muay Thai session. The simplest way to turn one class into a fuller Sabai experience.</p><a class="btn" href="https://wa.me/66987078676?text=Hi%20Sabai%2C%20I%27d%20like%20to%20book%20Train%20%2B%20Recover." target="_blank" rel="noopener" data-en="Book Train + Recover" data-th="จอง ฝึก + ฟื้นฟู">Book Train + Recover</a></article>
+          <article class="packageCard"><span class="packageTag" data-en="Half / full day" data-th="ครึ่งวัน / เต็มวัน">Half / full day</span><h3 data-en="Sabai Reset Day" data-th="Sabai Reset Day">Sabai Reset Day</h3><p data-en="Build a group day around Muay Thai, sauna, cold plunge, lakeside downtime and the cooking / meal area." data-th="จัดวันสำหรับกลุ่มด้วยมวยไทย ซาวน่า บ่อน้ำเย็น เวลาริมทะเลสาบ และพื้นที่ทำอาหาร / รับประทานอาหาร">Build a group day around Muay Thai, sauna, cold plunge, lakeside downtime and the cooking / meal area.</p><a class="btn" href="https://wa.me/66987078676?text=Hi%20Sabai%2C%20I%27d%20like%20to%20plan%20a%20Sabai%20Reset%20Day." target="_blank" rel="noopener" data-en="Plan a Sabai day" data-th="วางแผนวัน Sabai">Plan a Sabai day</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="eventsSection" id="events">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div><div class="eyebrow" data-en="Retreats · events · exhibitions" data-th="รีทรีต · อีเวนต์ · การแสดง">Retreats · events · exhibitions</div><h2 data-en="More than a gym." data-th="มากกว่ายิม">More than a gym.</h2></div>
+          <p class="muted" data-en="The lake, cooking area, recovery facilities and training space make Sabai suitable for private groups, visiting coaches, wellness days and small events." data-th="ทะเลสาบ พื้นที่ทำอาหาร พื้นที่ฟื้นฟู และพื้นที่ฝึก ทำให้ Sabai เหมาะสำหรับกลุ่มส่วนตัว โค้ชรับเชิญ วันเวลเนส และอีเวนต์ขนาดเล็ก">The lake, cooking area, recovery facilities and training space make Sabai suitable for private groups, visiting coaches, wellness days and small events.</p>
+        </div>
+        <div class="eventGrid">
+          <article class="eventCard"><div class="eyebrow" data-en="Groups & retreats" data-th="กลุ่มและรีทรีต">Groups & retreats</div><h3 data-en="Train · recover · eat · connect" data-th="ฝึก · ฟื้นฟู · กิน · เชื่อมต่อ">Train · recover · eat · connect</h3><p data-en="Host fitness retreats, club trips, corporate wellness days or private groups with training, sauna, cold plunge, lakeside downtime and communal food." data-th="จัดฟิตเนสรีทรีต ทริปสโมสร วันเวลเนสองค์กร หรือกลุ่มส่วนตัว พร้อมการฝึก ซาวน่า บ่อน้ำเย็น เวลาริมทะเลสาบ และอาหารร่วมกัน">Host fitness retreats, club trips, corporate wellness days or private groups with training, sauna, cold plunge, lakeside downtime and communal food.</p></article>
+          <article class="eventCard"><div class="eyebrow" data-en="Exhibitions" data-th="การแสดง">Exhibitions</div><h3 data-en="Fight demos & showcase nights" data-th="เดโมมวยและโชว์เคส">Fight demos & showcase nights</h3><p data-en="Use controlled exhibition sessions, pad demonstrations, technique showcases and visiting-fighter events to create nights people can watch, share and bring friends to. Any competitive activity should follow the appropriate local rules and supervision." data-th="จัดการแสดงแบบควบคุม เดโมเป้า โชว์เทคนิค และกิจกรรมกับนักมวยรับเชิญ เพื่อสร้างอีเวนต์ที่คนดู แชร์ และชวนเพื่อนได้ กิจกรรมแข่งขันควรเป็นไปตามกฎและการดูแลที่เหมาะสม">Use controlled exhibition sessions, pad demonstrations, technique showcases and visiting-fighter events to create nights people can watch, share and bring friends to. Any competitive activity should follow the appropriate local rules and supervision.</p></article>
+          <article class="eventCard"><div class="eyebrow" data-en="Food & social" data-th="อาหารและสังคม">Food & social</div><h3 data-en="Cook, eat and stay longer" data-th="ทำอาหาร กิน และอยู่นานขึ้น">Cook, eat and stay longer</h3><p data-en="The cooking area can support Thai cooking sessions, shared post-training meals, visiting-chef events and retreat dining without turning Sabai into a full-time restaurant." data-th="พื้นที่ทำอาหารรองรับคลาสทำอาหารไทย มื้ออาหารหลังฝึก กิจกรรมเชฟรับเชิญ และอาหารสำหรับรีทรีต โดยไม่ต้องเปิดร้านอาหารเต็มรูปแบบ">The cooking area can support Thai cooking sessions, shared post-training meals, visiting-chef events and retreat dining without turning Sabai into a full-time restaurant.</p></article>
+          <article class="eventCard"><div class="eyebrow" data-en="Future stay" data-th="ที่พักในอนาคต">Future stay</div><h3 data-en="Stay · Train · Recover" data-th="พัก · ฝึก · ฟื้นฟู">Stay · Train · Recover</h3><p data-en="Accommodation can be added later. Until then, Sabai can package training and recovery with nearby accommodation partners and prove the demand before building rooms." data-th="สามารถเพิ่มที่พักภายหลัง ระหว่างนี้ Sabai สามารถจับคู่การฝึกและฟื้นฟูกับที่พักใกล้เคียงเพื่อทดสอบความต้องการก่อนสร้างห้องพัก">Accommodation can be added later. Until then, Sabai can package training and recovery with nearby accommodation partners and prove the demand before building rooms.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="youthSection" id="youth">
+      <div class="wrap youthGrid">
+        <div>
+          <div class="eyebrow" data-en="Young fighters & families" data-th="เยาวชนและครอบครัว">Young fighters & families</div>
+          <h2 data-en="Build the next generation." data-th="สร้างนักสู้รุ่นใหม่">Build the next generation.</h2>
+          <p class="muted" data-en="A junior Muay Thai pathway gives local families a reason to come back every week and gives talented young fighters a place to develop fundamentals, discipline, fitness and confidence." data-th="เส้นทางมวยไทยเยาวชนทำให้ครอบครัวในพื้นที่กลับมาทุกสัปดาห์ และเปิดพื้นที่ให้นักสู้รุ่นใหม่พัฒนาพื้นฐาน วินัย ความฟิต และความมั่นใจ">A junior Muay Thai pathway gives local families a reason to come back every week and gives talented young fighters a place to develop fundamentals, discipline, fitness and confidence.</p>
+          <div class="cta"><a class="btn primary" href="https://wa.me/66987078676?text=Hi%20Sabai%2C%20I%27d%20like%20to%20ask%20about%20junior%20%2F%20young%20fighter%20training." target="_blank" rel="noopener" data-en="Ask about junior training" data-th="สอบถามคลาสเยาวชน">Ask about junior training</a></div>
+        </div>
+        <div class="youthBox">
+          <h3 data-en="Junior pathway" data-th="เส้นทางเยาวชน">Junior pathway</h3>
+          <ul>
+            <li data-en="Age-appropriate coached classes and strong fundamentals." data-th="คลาสตามวัยพร้อมโค้ชและพื้นฐานที่แข็งแรง">Age-appropriate coached classes and strong fundamentals.</li>
+            <li data-en="Fitness, coordination, confidence and respectful gym culture." data-th="ความฟิต การประสานงาน ความมั่นใจ และวัฒนธรรมยิมที่เคารพกัน">Fitness, coordination, confidence and respectful gym culture.</li>
+            <li data-en="Clear parent / guardian communication and consent." data-th="การสื่อสารและความยินยอมจากผู้ปกครองอย่างชัดเจน">Clear parent / guardian communication and consent.</li>
+            <li data-en="Controlled showcases or exhibitions when appropriate, coached and supervised." data-th="โชว์เคสหรือการแสดงแบบควบคุมเมื่อเหมาะสม พร้อมโค้ชและการดูแล">Controlled showcases or exhibitions when appropriate, coached and supervised.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <section class="gallerySection" id="gallery">
       <div class="wrap">
@@ -226,6 +327,21 @@
       </div>
     </section>
 
+
+    <section class="faqSection" id="faq">
+      <div class="wrap">
+        <div class="sectionHead"><div><div class="eyebrow" data-en="Hua Hin recovery & training FAQs" data-th="คำถามการฝึกและฟื้นฟูหัวหิน">Hua Hin recovery & training FAQs</div><h2 data-en="Good to know." data-th="ข้อมูลที่ควรรู้">Good to know.</h2></div></div>
+        <div class="faqGrid">
+          <details><summary data-en="Is there a Finnish sauna in Hua Hin at Sabai?" data-th="Sabai มีซาวน่าฟินแลนด์ในหัวหินหรือไม่?">Is there a Finnish sauna in Hua Hin at Sabai?</summary><p data-en="Yes. Sabai Retreat & Fight Academy has a Finnish sauna on site in Bo Fai, Hua Hin." data-th="มี Sabai Retreat & Fight Academy มีซาวน่าฟินแลนด์ในพื้นที่ที่บ่อฝ้าย หัวหิน">Yes. Sabai Retreat & Fight Academy has a Finnish sauna on site in Bo Fai, Hua Hin.</p></details>
+          <details><summary data-en="Does Sabai have a cold plunge / ice bath?" data-th="Sabai มีบ่อน้ำเย็น / ice bath หรือไม่?">Does Sabai have a cold plunge / ice bath?</summary><p data-en="Yes. The cold plunge can be used as part of a recovery visit or combined with Muay Thai training. Message Sabai for current access and pricing." data-th="มี สามารถใช้บ่อน้ำเย็นเพื่อการฟื้นฟู หรือรวมกับการฝึกมวยไทย สอบถาม Sabai สำหรับการเข้าใช้และราคาปัจจุบัน">Yes. The cold plunge can be used as part of a recovery visit or combined with Muay Thai training. Message Sabai for current access and pricing.</p></details>
+          <details><summary data-en="Can I book Muay Thai plus sauna and cold plunge?" data-th="จองมวยไทยพร้อมซาวน่าและบ่อน้ำเย็นได้หรือไม่?">Can I book Muay Thai plus sauna and cold plunge?</summary><p data-en="Yes. Ask for the Train + Recover option and Sabai can combine your training session with sauna and cold plunge." data-th="ได้ สอบถามแพ็กเกจ Train + Recover เพื่อรวมการฝึกกับซาวน่าและบ่อน้ำเย็น">Yes. Ask for the Train + Recover option and Sabai can combine your training session with sauna and cold plunge.</p></details>
+          <details><summary data-en="Can Sabai host retreats or private events?" data-th="Sabai จัดรีทรีตหรืออีเวนต์ส่วนตัวได้หรือไม่?">Can Sabai host retreats or private events?</summary><p data-en="Yes. Sabai has training space, recovery facilities, lake access and a cooking / meal area suitable for private groups, visiting coaches, wellness days and small events." data-th="ได้ Sabai มีพื้นที่ฝึก พื้นที่ฟื้นฟู ทางเข้าทะเลสาบ และพื้นที่ทำอาหาร / รับประทานอาหาร เหมาะสำหรับกลุ่มส่วนตัว โค้ชรับเชิญ วันเวลเนส และอีเวนต์ขนาดเล็ก">Yes. Sabai has training space, recovery facilities, lake access and a cooking / meal area suitable for private groups, visiting coaches, wellness days and small events.</p></details>
+          <details><summary data-en="Does Sabai offer training for young fighters?" data-th="Sabai มีการฝึกสำหรับนักสู้เยาวชนหรือไม่?">Does Sabai offer training for young fighters?</summary><p data-en="Enquire with Sabai about age-appropriate junior training and availability. Parent or guardian involvement and appropriate coaching / supervision should be part of the programme." data-th="สอบถาม Sabai เรื่องการฝึกเยาวชนตามวัยและเวลาว่าง โดยควรมีการมีส่วนร่วมของผู้ปกครองและการดูแลจากโค้ชที่เหมาะสม">Enquire with Sabai about age-appropriate junior training and availability. Parent or guardian involvement and appropriate coaching / supervision should be part of the programme.</p></details>
+          <details><summary data-en="Can Sabai run fight exhibitions or showcase events?" data-th="Sabai จัดการแสดงมวยหรือโชว์เคสได้หรือไม่?">Can Sabai run fight exhibitions or showcase events?</summary><p data-en="Sabai can use controlled demonstrations, pad work, technique showcases and visiting-fighter events. Any competitive activity should follow appropriate local rules, consent and supervision." data-th="Sabai สามารถจัดเดโมแบบควบคุม การตีเป้า โชว์เทคนิค และกิจกรรมนักมวยรับเชิญ โดยกิจกรรมแข่งขันควรเป็นไปตามกฎ ความยินยอม และการดูแลที่เหมาะสม">Sabai can use controlled demonstrations, pad work, technique showcases and visiting-fighter events. Any competitive activity should follow appropriate local rules, consent and supervision.</p></details>
+        </div>
+      </div>
+    </section>
+
     <section id="visit">
       <div class="wrap">
         <div class="sectionHead"><div><div class="eyebrow" data-en="By the lake · Bo Fai" data-th="ริมทะเลสาบ · บ่อฝ้าย">By the lake · Bo Fai</div><h2 data-en="Easy to find." data-th="หาเจอง่าย">Easy to find.</h2><div class="pinBadge">📍 Sabai Retreat & Fight Academy · Hua Hin</div></div><p class="muted" data-en="Use the live map below for the pin drop and directions straight to the camp." data-th="ใช้แผนที่ด้านล่างเพื่อดูหมุดและเส้นทางตรงมายังค่าย">Use the live map below for the pin drop and directions straight to the camp.</p></div>
@@ -251,9 +367,9 @@
     <section class="contact" id="contact">
       <div class="wrap contactGrid">
         <div>
-          <div class="eyebrow" style="color:#fff7e7" data-en="Ready to train?" data-th="พร้อมฝึกแล้วหรือยัง?">Ready to train?</div>
-          <h2 data-en="Send us a message and we’ll get you started." data-th="ส่งข้อความหาเรา แล้วมาเริ่มฝึกกัน">Send us a message and we’ll get you started.</h2>
-          <p data-en="Tell us your experience level, when you’re in Hua Hin and what you want to work on." data-th="บอกระดับประสบการณ์ วันที่อยู่หัวหิน และสิ่งที่คุณอยากพัฒนา">Tell us your experience level, when you’re in Hua Hin and what you want to work on.</p>
+          <div class="eyebrow" style="color:#fff7e7" data-en="Train · recover · bring a group" data-th="ฝึก · ฟื้นฟู · พากลุ่มมา">Train · recover · bring a group</div>
+          <h2 data-en="Tell us what kind of Sabai day you want." data-th="บอกเราว่าคุณอยากได้วันแบบไหนที่ Sabai">Tell us what kind of Sabai day you want.</h2>
+          <p data-en="Book Muay Thai, add sauna and cold plunge, ask about junior training, or plan a private retreat, exhibition or event." data-th="จองมวยไทย เพิ่มซาวน่าและบ่อน้ำเย็น สอบถามคลาสเยาวชน หรือวางแผนรีทรีต การแสดง หรืออีเวนต์ส่วนตัว">Book Muay Thai, add sauna and cold plunge, ask about junior training, or plan a private retreat, exhibition or event.</p>
         </div>
         <div class="contactActions">
           <a class="btn" href="https://wa.me/66987078676?text=Hi%20Sabai%20Fight%20Academy%2C%20I%27d%20like%20to%20book%20training." target="_blank" rel="noopener" data-en="Book on WhatsApp" data-th="จองผ่าน WhatsApp">Book on WhatsApp</a>
