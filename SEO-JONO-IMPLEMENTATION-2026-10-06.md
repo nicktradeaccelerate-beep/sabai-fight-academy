@@ -40,3 +40,18 @@ Once Search Console is verified:
 - after data settles, prioritize queries/pages with meaningful impressions and positions roughly 4–20
 - strengthen those pages with genuine photos, proof, FAQs and internal links rather than spinning up thin pages
 - record confirmed bookings and revenue by landing page / source
+
+## Live technical QA after implementation
+Lighthouse mobile, 2026-10-06:
+- Performance: 95/100 (was 65 before optimisation pass)
+- Accessibility: 100/100
+- Best Practices: 100/100
+- SEO: 100/100
+- LCP: 1.6s
+- CLS: 0
+- Total Blocking Time: 230ms
+
+All 13 sitemap URLs return HTTP 200. No duplicate page titles were found in the indexable page set. Every indexable page has a title, meta description, canonical and H1.
+
+## Search Console status
+A Google Search Console property attempt was made for https://retreat.raifinder.com/ and the verification file is live at the required root URL. The Safari Google session currently active on the Mac mini is signed in as charlene@backfromblack.co.uk, and Google reports that account does not have access to the Sabai property. Do not switch identities or alter Google ownership from the wrong account. Finish Search Console verification/submission when the owner Google identity is active, then submit https://retreat.raifinder.com/sitemap.xml and inspect Tier-1 money pages first.
