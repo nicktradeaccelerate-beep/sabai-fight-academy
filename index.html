@@ -11,11 +11,12 @@
   <meta property="og:description" content="Train, recover and reset in Hua Hin: Muay Thai, Finnish sauna, cold plunge, lakeside recovery, retreats and events." />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://retreat.raifinder.com/" />
+  <link rel="icon" href="/sabai-logo.jpg" type="image/jpeg" />
   <style>
     *,*::before,*::after{box-sizing:border-box}
     :root{
       --ink:#f7f1df; --muted:#cfc8b4; --green:#062f22; --green2:#0b4932;
-      --orange:#f47a12; --gold:#e5b15a; --cream:#f3ead5; --card:#103f30;
+      --orange:#a94700; --gold:#e5b15a; --cream:#f3ead5; --card:#103f30;
       --shadow:0 18px 50px rgba(0,0,0,.28);
     }
     *{box-sizing:border-box} html{scroll-behavior:smooth}
@@ -45,7 +46,7 @@
     .btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
     .primary{background:var(--orange);color:white;box-shadow:0 12px 30px rgba(244,122,18,.28)}
     .secondary{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.05)}
-    .lineBtn{background:#06c755;color:white;border-color:#06c755;box-shadow:0 12px 30px rgba(6,199,85,.18)}
+    .lineBtn{background:#057b35;color:white;border-color:#057b35;box-shadow:0 12px 30px rgba(6,199,85,.18)}
     .heroCard{box-sizing:border-box;border:1px solid rgba(255,255,255,.13);border-radius:34px;box-shadow:var(--shadow);position:relative;overflow:hidden;min-height:560px;background:#0a3326}
     .heroCard:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,26,19,.04) 30%,rgba(2,26,19,.9) 100%);pointer-events:none}
     .heroPhoto{width:100%;height:560px;object-fit:cover;object-position:center 40%}
@@ -53,7 +54,7 @@
     .quick{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
     .quick div{min-width:0;overflow:hidden;background:rgba(2,26,19,.78);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px;text-align:center;backdrop-filter:blur(8px)}
     .quick strong{display:block;font-size:20px;color:var(--gold)} .quick span{font-size:12px;color:#d7e2dc}
-    section{padding:88px 0}.cream{background:var(--cream);color:#173228}.cream .muted{color:#597064}
+    section{padding:88px 0}main>section:not(.hero){content-visibility:auto;contain-intrinsic-size:800px}.cream{background:var(--cream);color:#173228}.cream .muted{color:#4f6157}.cream .eyebrow,.packageSection .eyebrow,.youthSection .eyebrow{color:#8a5517}
     .sectionHead{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:34px}
     h2{font-size:clamp(36px,5vw,64px);line-height:1;margin:0;letter-spacing:-.045em}
     .muted{color:var(--muted);max-width:620px}
@@ -104,7 +105,7 @@
     .featureGrid{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
     .featureCard{padding:28px;border-radius:26px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);box-shadow:var(--shadow)}
     .featureIcon{font-size:32px;margin-bottom:20px}.featureCard h3{font-size:28px;margin:0 0 10px}.featureCard p{color:var(--muted);margin:0}
-    .packageSection{background:var(--cream);color:#173228}.packageSection .muted{color:#63766a}
+    .packageSection{background:var(--cream);color:#173228}.packageSection .muted{color:#4f6157}
     .packageGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
     .packageCard{background:white;border:1px solid rgba(17,51,37,.1);border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(27,49,38,.09);display:flex;flex-direction:column}
     .packageCard.featured{background:#082b20;color:white;border-color:#d79a42;transform:translateY(-5px)}
@@ -114,7 +115,7 @@
     .eventsSection{background:#031f17}.eventGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
     .eventCard{padding:30px;border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.11)}
     .eventCard h3{font-size:28px;margin:0 0 10px}.eventCard p{color:var(--muted);margin:0}.eventCard .eyebrow{margin-bottom:12px}
-    .youthSection{background:#efe3c8;color:#173228}.youthSection .muted{color:#5e7165}
+    .youthSection{background:#efe3c8;color:#173228}.youthSection .muted{color:#4f6157}
     .youthGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:start}.youthBox{background:white;padding:28px;border-radius:24px;border:1px solid rgba(17,51,37,.1)}
     .youthBox h3{margin:0 0 14px;font-size:28px}.youthBox ul{padding-left:20px;margin:0}.youthBox li{margin:8px 0;color:#53675b}
     .faqSection{background:#082b20}.faqGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -171,7 +172,7 @@
         <a class="langLink" href="#events" data-en="Retreats & Events" data-th="รีทรีตและอีเวนต์">Retreats & Events</a>
         <a class="langLink" href="#youth" data-en="Young Fighters" data-th="เยาวชน">Young Fighters</a>
         <a class="langLink" href="#visit" data-en="Visit" data-th="สถานที่">Visit</a>
-        <button class="lang" id="langBtn" aria-label="Switch language">TH</button>
+        <button class="lang" id="langBtn" aria-label="TH - switch language">TH</button>
       </nav>
     </div>
   </header>
@@ -408,7 +409,7 @@
 
   <script>
     const btn=document.getElementById('langBtn');let lang='en';
-    btn.addEventListener('click',()=>{lang=lang==='en'?'th':'en';btn.textContent=lang==='en'?'TH':'EN';document.documentElement.lang=lang;
+    btn.addEventListener('click',()=>{lang=lang==='en'?'th':'en';btn.textContent=lang==='en'?'TH':'EN';btn.setAttribute('aria-label',(lang==='en'?'TH':'EN')+' - switch language');document.documentElement.lang=lang;
       document.querySelectorAll('[data-en][data-th]').forEach(el=>{el.innerHTML=el.dataset[lang]});
     });
   </script>
