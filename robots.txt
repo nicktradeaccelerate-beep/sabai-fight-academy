@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nicktradeaccelerate-beep.github.io/sabai-fight-academy/sitemap.xml
+Sitemap: https://retreat.raifinder.com/sitemap.xml
