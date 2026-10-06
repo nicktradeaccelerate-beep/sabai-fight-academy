@@ -18,4 +18,49 @@
 <main><section class="hero"><div class="wrap"><div class="eyebrow">TRAIN · RECOVER · RETREAT</div><h1>Muay Thai retreats in Hua Hin</h1><p class="lead">Build a private Sabai retreat around Muay Thai, Finnish sauna, cold plunge, lakeside downtime and communal food. Sabai can host groups now and can pair with nearby accommodation while future on-site stay options are developed.</p><a class="btn" href="https://wa.me/66987078676?text=Hi%20Sabai%2C%20I%20would%20like%20to%20plan%20a%20Muay%20Thai%20retreat%20in%20Hua%20Hin." target="_blank" rel="noopener">Plan a retreat with Sabai</a></div></section>
 <section><div class="wrap"><div class="grid"><article class="card"><h2>Train</h2><p>Group sessions, private coaching and visiting-coach formats can anchor the retreat schedule.</p></article><article class="card"><h2>Recover</h2><p>Use the Finnish sauna, cold plunge and lake setting to create structured downtime between sessions.</p></article><article class="card"><h2>Eat & connect</h2><p>The cooking / meal area supports shared food, Thai cooking sessions and group social time without needing a full-time restaurant.</p></article></div></div></section>
 <section class="links"><div class="wrap"><div class="eyebrow">EXPLORE SABAI</div><h2>Train, recover and spend longer at Sabai.</h2><a href="../muay-thai-hua-hin/">Muay Thai Hua Hin</a><a href="../sauna-ice-bath-hua-hin/">Sauna & cold plunge</a><a href="../kids-muay-thai-hua-hin/">Junior Muay Thai</a><a href="../muay-thai-retreat-hua-hin/">Muay Thai retreats</a><a href="../events-retreats-hua-hin/">Events & groups</a></div></section><section class="links"><div class="wrap"><strong>Planning your visit?</strong> <a href="../guides/">Read the Sabai Hua Hin guides →</a></div></section></main>
-<div class="footer"><div class="wrap">Sabai Retreat · Bo Fai, Hua Hin · +66 98 707 8676 · <a href="mailto:nattapoonjinpoon@hotmail.co.th">nattapoonjinpoon@hotmail.co.th</a></div></div></body></html>
+<div class="footer"><div class="wrap">Sabai Retreat · Bo Fai, Hua Hin · +66 98 707 8676 · <a href="mailto:nattapoonjinpoon@hotmail.co.th">nattapoonjinpoon@hotmail.co.th</a></div></div>
+<script>
+window.dataLayer = window.dataLayer || [];
+(function () {
+  function push(event, data) {
+    window.dataLayer.push(Object.assign({
+      event: event,
+      page_path: window.location.pathname,
+      page_title: document.title
+    }, data || {}));
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var label = (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120);
+    var type = '';
+    if (href.indexOf('wa.me/') !== -1) type = 'whatsapp';
+    else if (href.indexOf('line.me/') !== -1) type = 'line';
+    else if (href.indexOf('tel:') === 0) type = 'phone';
+    else if (href.indexOf('mailto:') === 0) type = 'email';
+    else if (href.indexOf('google.com/maps') !== -1) type = 'maps';
+    else if (href.indexOf('instagram.com/') !== -1) type = 'instagram';
+
+    if (type) {
+      push('contact_click', {
+        contact_method: type,
+        link_url: href,
+        link_text: label
+      });
+    }
+
+    if (/book|plan|retreat|training|price/i.test(label)) {
+      push('booking_intent', {
+        link_url: href,
+        link_text: label
+      });
+    }
+  }, true);
+
+  push('measurement_ready', { measurement_stack: 'dataLayer' });
+})();
+</script>
+
+</body></html>

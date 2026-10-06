@@ -5,4 +5,49 @@
 <div class="top"><div class="wrap"><a href="/">← Sabai Retreat</a></div></div><main><section class="hero"><div class="wrap"><div class="eyebrow">PRIVATE TRAINING · BO FAI · HUA HIN</div><h1>Private Muay Thai training in Hua Hin</h1><p class="lead">Want more individual attention than a group class? Sabai offers private Muay Thai coaching in Hua Hin, with time to work on technique, fitness and your own goals.</p><a class="btn" href="https://wa.me/66987078676" target="_blank" rel="noopener">Message Sabai on WhatsApp</a><a class="btn alt" href="tel:+66987078676">Call +66 98 707 8676</a></div></section>
 <section class="section"><div class="wrap"><div class="grid"><article class="card"><h2>1-to-1 attention</h2><p>Work directly with a coach rather than sharing the session with a full group.</p></article><article class="card"><h2>Published at ฿700</h2><p>Sabai currently publishes private Muay Thai sessions at ฿700. Message Tony to confirm the slot before travelling.</p></article><article class="card"><h2>Add recovery</h2><p>Ask about combining your private session with the Finnish sauna and cold plunge.</p></article></div></div></section><section class="section white"><div class="wrap"><h2>Who is private training for?</h2><p>Private sessions can suit complete beginners who want a calmer introduction, visitors with limited time, regular trainees who want to improve specific techniques, and people who simply prefer one-to-one coaching. If you are comparing private Muay Thai in Hua Hin, start by telling Tony your experience level and what you want from the session.</p><p><a href="../guides/beginner-muay-thai-hua-hin/">New to Muay Thai? Read the beginner guide →</a></p></div></section>
 <section class="section white"><div class="wrap"><div class="eyebrow">Explore Sabai</div><h2>Useful next pages</h2><div class="links"><a href="/muay-thai-hua-hin/">Muay Thai Hua Hin</a><a href="/sauna-ice-bath-hua-hin/">Sauna & cold plunge</a><a href="/kids-muay-thai-hua-hin/">Junior Muay Thai</a><a href="/muay-thai-retreat-hua-hin/">Muay Thai retreats</a><a href="/guides/">Hua Hin training guides</a></div></div></section></main>
-<div class="footer"><div class="wrap">Sabai Retreat · Bo Fai, Hua Hin · <a href="mailto:nattapoonjinpoon@hotmail.co.th">nattapoonjinpoon@hotmail.co.th</a> · +66 98 707 8676</div></div></body></html>
+<div class="footer"><div class="wrap">Sabai Retreat · Bo Fai, Hua Hin · <a href="mailto:nattapoonjinpoon@hotmail.co.th">nattapoonjinpoon@hotmail.co.th</a> · +66 98 707 8676</div></div>
+<script>
+window.dataLayer = window.dataLayer || [];
+(function () {
+  function push(event, data) {
+    window.dataLayer.push(Object.assign({
+      event: event,
+      page_path: window.location.pathname,
+      page_title: document.title
+    }, data || {}));
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var label = (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 120);
+    var type = '';
+    if (href.indexOf('wa.me/') !== -1) type = 'whatsapp';
+    else if (href.indexOf('line.me/') !== -1) type = 'line';
+    else if (href.indexOf('tel:') === 0) type = 'phone';
+    else if (href.indexOf('mailto:') === 0) type = 'email';
+    else if (href.indexOf('google.com/maps') !== -1) type = 'maps';
+    else if (href.indexOf('instagram.com/') !== -1) type = 'instagram';
+
+    if (type) {
+      push('contact_click', {
+        contact_method: type,
+        link_url: href,
+        link_text: label
+      });
+    }
+
+    if (/book|plan|retreat|training|price/i.test(label)) {
+      push('booking_intent', {
+        link_url: href,
+        link_text: label
+      });
+    }
+  }, true);
+
+  push('measurement_ready', { measurement_stack: 'dataLayer' });
+})();
+</script>
+
+</body></html>
